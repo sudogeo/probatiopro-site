@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Probatio Pro — Access Certification for Jira</title>
+<meta name="description" content="Access Certification for Jira runs periodic user access reviews inside Jira Cloud and produces evidence an auditor can test.">
+<style>
+  :root{--paper:#FFFFFF;--ink:#16202B;--soft:#4C5C63;--rule:#DDE3E2;--seal:#2E6A62;--wash:#F2F6F5;}
+  @media (prefers-color-scheme:dark){:root{--paper:#111920;--ink:#DFE6E4;--soft:#93A3A8;--rule:#2A3740;--seal:#6FB6AA;--wash:#18222A;}}
+  *{box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);margin:0;
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       -webkit-font-smoothing:antialiased}
+  .wrap{max-width:44rem;margin:0 auto;padding:3.5rem 1.25rem 5rem}
+  .eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--seal);margin:0 0 .7rem}
+  h1{font-size:clamp(1.8rem,4.5vw,2.5rem);line-height:1.12;margin:0 0 1rem;letter-spacing:-.015em}
+  .lede{font-size:1.1rem;color:var(--soft);margin:0 0 2.5rem;max-width:38rem}
+  h2{font-size:1.1rem;margin:2.5rem 0 .6rem}
+  p,li{max-width:38rem}
+  p{margin:0 0 1rem}
+  ul{padding-left:1.15rem;margin:0 0 1rem}
+  li{margin-bottom:.45rem}
+  a{color:var(--seal)}
+  .box{background:var(--wash);border-left:3px solid var(--seal);padding:1rem 1.15rem;margin:1.8rem 0;border-radius:0 3px 3px 0}
+  .box p:last-child{margin-bottom:0}
+  footer{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule);font-size:.88rem;color:var(--soft)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">Probatio Pro</p>
+  <h1>Access Certification for Jira</h1>
+  <p class="lede">Periodic user access reviews, run inside Jira Cloud, producing evidence an
+  auditor can test rather than take on trust.</p>
+
+  <h2>What it does</h2>
+  <p>It reads your permission schemes, project roles and group membership, then asks Jira what each
+  account can <em>actually</em> do — and reports where the two disagree. A right that exists but
+  that no grant explains is a finding, not a silence.</p>
+  <p>Every right carries the reason it is held, in a sentence a reviewer can act on: who, through
+  which group, mapped to which role, granted by which scheme.</p>
+  <p>Each review is sealed as a dated snapshot with a content hash. A recipient can recompute that
+  hash from the exported file alone, without this app — which is what makes the evidence testable
+  instead of merely asserted.</p>
+
+  <div class="box">
+    <p><strong>It never changes anything in Jira.</strong> Every permission the app requests is a
+    read permission: it cannot grant, revoke or modify a right, by design rather than by policy.</p>
+    <p><strong>Nothing leaves Atlassian.</strong> The app makes no network call outside Atlassian's
+    own infrastructure, uses no analytics and no third-party service, and qualifies for Atlassian's
+    <em>Runs on Atlassian</em> programme.</p>
+  </div>
+
+  <h2>Support</h2>
+  <p>Questions about the app, a problem to report, or a question about how it handles data —
+  write to <a href="mailto:contact@probatiopro.fr">contact@probatiopro.fr</a>. We answer in English
+  or in French.</p>
+
+  <h2>Legal</h2>
+  <ul>
+    <li><a href="/privacy">Privacy policy</a></li>
+  </ul>
+
+  <footer>
+    <p>Probatio Pro — sole trader registered in France ·
+    <a href="mailto:contact@probatiopro.fr">contact@probatiopro.fr</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

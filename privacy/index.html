@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Access Certification for Jira</title>
+<style>
+  :root{
+    --paper:#FFFFFF; --ink:#16202B; --soft:#4C5C63; --rule:#DDE3E2;
+    --seal:#2E6A62; --wash:#F2F6F5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{--paper:#111920;--ink:#DFE6E4;--soft:#93A3A8;--rule:#2A3740;--seal:#6FB6AA;--wash:#18222A;}
+  }
+  *{box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);margin:0;
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       -webkit-font-smoothing:antialiased}
+  .wrap{max-width:44rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+  header{border-bottom:2px solid var(--ink);padding-bottom:1rem;margin-bottom:2rem}
+  .eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--seal);margin:0 0 .6rem}
+  h1{font-size:clamp(1.7rem,4vw,2.3rem);line-height:1.15;margin:0 0 .5rem;letter-spacing:-.01em}
+  .dates{font-size:.88rem;color:var(--soft);margin:0}
+  h2{font-size:1.15rem;margin:2.4rem 0 .6rem;line-height:1.3}
+  p,li{max-width:38rem}
+  p{margin:0 0 1rem}
+  ul{padding-left:1.15rem;margin:0 0 1rem}
+  li{margin-bottom:.4rem}
+  strong{font-weight:600}
+  .box{background:var(--wash);border-left:3px solid var(--seal);padding:1rem 1.15rem;margin:1.6rem 0;border-radius:0 3px 3px 0}
+  .box p:last-child{margin-bottom:0}
+  a{color:var(--seal)}
+  footer{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule);font-size:.88rem;color:var(--soft)}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9em;background:var(--wash);padding:.1em .35em;border-radius:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Probatio Pro</p>
+  <h1>Privacy Policy</h1>
+  <p class="dates">Access Certification for Jira · Effective 11 September 2026 · Version 1.0</p>
+</header>
+
+<div class="box">
+  <p><strong>In short.</strong> This app runs entirely inside Atlassian's cloud. It reads your Jira
+  permission configuration, stores the results in a database Atlassian provisions for your own
+  installation, and sends nothing anywhere else. We do not receive a copy of your data, we use no
+  analytics, and we use no third-party services. The app cannot change any permission in Jira.</p>
+</div>
+
+<h2>Who we are</h2>
+<p>Access Certification for Jira is published by <strong>Probatio Pro</strong>, a sole trader
+registered in France. Contact: <a href="mailto:contact@probatiopro.fr">contact@probatiopro.fr</a>.</p>
+
+<h2>What the app reads</h2>
+<p>To produce an access review, the app reads the following from the Jira site it is installed on,
+using read-only permissions only:</p>
+<ul>
+  <li>projects, their type, and their project lead;</li>
+  <li>permission schemes and the grants they contain;</li>
+  <li>project roles and the accounts or groups assigned to them;</li>
+  <li>groups and their membership;</li>
+  <li>user accounts — the Atlassian account ID, display name, account type, and whether the
+      account is active;</li>
+  <li>the result of Jira's own effective permission check for each account.</li>
+</ul>
+<p>Some of this is personal data: an account ID and a display name identify a person. The app reads
+it for one purpose — to determine who holds which right in Jira, and why — because that is the
+question an access review exists to answer.</p>
+
+<h2>Where it is stored, and where it is not</h2>
+<p>Results are written to <strong>Forge SQL</strong>, a database Atlassian provisions for each
+installation of the app and hosts within its own infrastructure. The data stays in your Atlassian
+environment and is subject to Atlassian's own data residency and security arrangements for your
+site.</p>
+<p><strong>We do not receive a copy.</strong> There is no server of ours, no account of ours holding
+your data, and no export to us of any kind. The only way data leaves your Atlassian environment is
+when somebody at your organisation downloads an evidence pack — and that file goes to them, not
+to us.</p>
+
+<h2>What this app never does</h2>
+<ul>
+  <li><strong>No network calls outside Atlassian.</strong> The app declares no external
+      permissions and no remote endpoints. Atlassian's own tooling reports its egress inventory as
+      empty, and it qualifies for Atlassian's <em>Runs on Atlassian</em> programme, which requires
+      exactly this.</li>
+  <li><strong>No analytics, no tracking, no telemetry.</strong> We collect no usage statistics and
+      operate no measurement of any kind inside the app.</li>
+  <li><strong>No third parties and no sub-processors.</strong> No data is shared with, sold to, or
+      processed by anyone other than Atlassian as your platform provider.</li>
+  <li><strong>No writes to Jira.</strong> Every permission the app requests is a read permission.
+      It cannot grant, revoke or modify any right, by design and not by policy.</li>
+  <li><strong>No personal data in diagnostic logs.</strong> The app is built so that account
+      identifiers, names and group names are never written to the platform's logs. This is enforced
+      automatically in our build, not left to care.</li>
+</ul>
+
+<h2>How long it is kept, and how it is deleted</h2>
+<ul>
+  <li><strong>Retention.</strong> Snapshots are kept according to the retention setting your
+      administrator configures, and older ones are purged automatically. A review campaign is
+      removed together with the snapshot it reviewed.</li>
+  <li><strong>Uninstalling.</strong> Removing the app destroys its database, and with it every
+      snapshot, finding and decision it held. <strong>This cannot be undone.</strong> If you need to
+      keep evidence of a review that has taken place, export the evidence pack before uninstalling —
+      that exported file is the durable record.</li>
+</ul>
+
+<h2>Roles and your rights</h2>
+<p>Your organisation decides what is read, when, and by whom — it controls the app's settings and
+its data. We provide software that runs inside your environment and hold no copy of what it
+produces.</p>
+<p>Because of that, a request to access, correct or erase personal data held by this app is fulfilled
+inside your own Atlassian instance: an administrator can delete a snapshot, change the retention
+setting, or uninstall the app to destroy everything at once. If you are an individual whose data
+appears in a review, please contact your own organisation's administrator, who has the ability to
+act and the context to do so.</p>
+<p>If you have a question about how the app handles data that your administrator cannot answer,
+write to <a href="mailto:contact@probatiopro.fr">contact@probatiopro.fr</a> and we will answer it.</p>
+
+<h2>Security</h2>
+<p>The app inherits the security posture of Atlassian's Forge platform: Atlassian-hosted compute,
+Atlassian-hosted storage, and no network surface of our own. It has eight runtime dependencies,
+of which one is not published by Atlassian. Access to the review inside Jira is restricted: by
+default only Jira administrators see it, a designated group can be granted access by an
+administrator, and every other licensed account sees only its own rights.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the version number and effective date at the top of this page change with
+it. Material changes — a new category of data read, a new recipient, a change in where data is
+stored — will be described here rather than absorbed silently.</p>
+
+<footer>
+  <p>Probatio Pro · <a href="mailto:contact@probatiopro.fr">contact@probatiopro.fr</a> ·
+  Version 1.0, 11 September 2026</p>
+</footer>
+
+</div>
+</body>
+</html>
