@@ -40,7 +40,7 @@
 <header>
   <p class="eyebrow">Probatio Pro</p>
   <h1>Privacy Policy</h1>
-  <p class="dates">Access Certification for Jira · Effective 11 September 2026 · Version 1.0</p>
+  <p class="dates">Access Certification for Jira · Effective 17 September 2026 · Version 1.1</p>
 </header>
 
 <div class="box">
@@ -100,9 +100,10 @@ to us.</p>
 
 <h2>How long it is kept, and how it is deleted</h2>
 <ul>
-  <li><strong>Retention.</strong> Snapshots are kept according to the retention setting your
-      administrator configures, and older ones are purged automatically. A review campaign is
-      removed together with the snapshot it reviewed.</li>
+  <li><strong>Retention.</strong> Snapshots are kept for <strong>seven years</strong>, and older
+      ones are purged automatically by a daily sweep. The period is fixed in this version and
+      cannot be changed from the app. A review campaign is removed together with the snapshot it
+      reviewed.</li>
   <li><strong>Uninstalling.</strong> Removing the app destroys its database, and with it every
       snapshot, finding and decision it held. <strong>This cannot be undone.</strong> If you need to
       keep evidence of a review that has taken place, export the evidence pack before uninstalling —
@@ -123,8 +124,9 @@ write to <a href="mailto:contact@probatiopro.fr">contact@probatiopro.fr</a> and 
 
 <h2>Security</h2>
 <p>The app inherits the security posture of Atlassian's Forge platform: Atlassian-hosted compute,
-Atlassian-hosted storage, and no network surface of our own. It has eight runtime dependencies,
-of which one is not published by Atlassian. Access to the review inside Jira is restricted: by
+Atlassian-hosted storage, and no network surface of our own. It declares twenty-six runtime
+dependencies, of which twenty-three are Atlassian's own; the other three are <code>pdf-lib</code>,
+<code>react</code> and <code>react-dom</code>. Access to the review inside Jira is restricted: by
 default only Jira administrators see it, a designated group can be granted access by an
 administrator, and every other licensed account sees only its own rights.</p>
 
@@ -135,7 +137,7 @@ stored — will be described here rather than absorbed silently.</p>
 
 <footer>
   <p>Probatio Pro · <a href="mailto:contact@probatiopro.fr">contact@probatiopro.fr</a> ·
-  Version 1.0, 11 September 2026 · <a href="/terms">Terms of service</a> ·
+  Version 1.1, 17 September 2026 · <a href="/terms">Terms of service</a> ·
   <a href="/legal">Legal notice</a></p>
 </footer>
 
