@@ -40,7 +40,7 @@
 <header>
   <p class="eyebrow">Probatio Pro</p>
   <h1>Privacy Policy</h1>
-  <p class="dates">Access Certification for Jira · Effective 17 September 2026 · Version 1.1</p>
+  <p class="dates">Access Certification for Jira · Effective 18 September 2026 · Version 1.2</p>
 </header>
 
 <div class="box">
@@ -65,6 +65,10 @@ using read-only permissions only:</p>
   <li>groups and their membership;</li>
   <li>user accounts — the Atlassian account ID, display name, account type, and whether the
       account is active;</li>
+  <li>issue security schemes and the levels they define;</li>
+  <li>global permissions, as Jira's own permission check reports them;</li>
+  <li>the other holders a grant can name, including application roles and user-picker custom
+      fields;</li>
   <li>the result of Jira's own effective permission check for each account.</li>
 </ul>
 <p>Some of this is personal data: an account ID and a display name identify a person. The app reads
@@ -114,11 +118,13 @@ to us.</p>
 <p>Your organisation decides what is read, when, and by whom — it controls the app's settings and
 its data. We provide software that runs inside your environment and hold no copy of what it
 produces.</p>
-<p>Because of that, a request to access, correct or erase personal data held by this app is fulfilled
-inside your own Atlassian instance: an administrator can delete a snapshot, or uninstall the app
-to destroy everything at once. If you are an individual whose data
-appears in a review, please contact your own organisation's administrator, who has the ability to
-act and the context to do so.</p>
+<p>Because of that, a request to access, correct or erase personal data held by this app is answered
+inside your own Atlassian instance. Be aware of what the app holds: a dated, sealed record of Jira's
+own configuration. It offers no way to edit a sealed snapshot or to remove one person from it — an
+evidence pack that could be edited would not be evidence. An administrator can uninstall the app,
+which destroys every snapshot at once; short of that, a snapshot leaves when the seven-year
+retention purges it. If you are an individual whose data appears in a review, please contact your
+own organisation's administrator, who has the ability to act and the context to do so.</p>
 <p>If you have a question about how the app handles data that your administrator cannot answer,
 write to <a href="mailto:contact@probatiopro.fr">contact@probatiopro.fr</a> and we will answer it.</p>
 
@@ -127,8 +133,10 @@ write to <a href="mailto:contact@probatiopro.fr">contact@probatiopro.fr</a> and 
 Atlassian-hosted storage, and no network surface of our own. It declares twenty-six runtime
 dependencies, of which twenty-three are Atlassian's own; the other three are <code>pdf-lib</code>,
 <code>react</code> and <code>react-dom</code>. Access to the review inside Jira is restricted: by
-default only Jira administrators see it, a designated group can be granted access by an
-administrator, and every other licensed account sees only its own rights.</p>
+default only Jira administrators see it, and a designated group can be granted access by an
+administrator. A reviewer sees the rights assigned to them to review, which are other people's.
+Every other licensed account sees only its own rights, and any finding of which it is itself the
+subject.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the version number and effective date at the top of this page change with
@@ -137,7 +145,7 @@ stored — will be described here rather than absorbed silently.</p>
 
 <footer>
   <p>Probatio Pro · <a href="mailto:contact@probatiopro.fr">contact@probatiopro.fr</a> ·
-  Version 1.1, 17 September 2026 · <a href="/terms">Terms of service</a> ·
+  Version 1.2, 18 September 2026 · <a href="/terms">Terms of service</a> ·
   <a href="/legal">Legal notice</a></p>
 </footer>
 
